@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@600&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="sweetalert2.all.min.js"></script>
+    <title>Nike-Store</title>
+</head>
+<body>
+      <div class="container">
+        <div class="navbar">
+            <svg xmlns="http://www.w3.org/2000/svg"
+        width="4in" height="2.25in"
+        viewBox="0 0 1200 675" class="logo">
+     <path id="Unnamed"
+           fill="black" stroke="black" stroke-width="1"
+           d="M 332.00,362.00
+              C 332.00,362.00 1179.00,137.00 1179.00,137.00
+                1180.40,136.37 470.07,442.72 389.00,479.00
+                366.00,482.00 212.21,566.21 99.00,544.00
+                -118.54,469.15 117.00,185.00 178.00,128.00
+                177.00,122.00 21.00,431.00 332.00,362.00 Z" />
+   </svg>
+            <nav>
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Featured</a></li>
+                    <li><a href="">Product</a></li>
+                    <li><a href="">Explore</a></li>
+                    <li><a href="">Contact Us</a></li>
+                </ul>
+            </nav>
+            <a href=""><i class="fa cart fa-cart-plus"></i></a>
+        </div>
+        <div class="content">
+            <h1>Nike <span class="style">Shoes</span></h1>
+            <p>Nike, Inc. is an American multinational corporation that is <br>engaged in the design, development, manufacturing, and worldwide <br>marketing and sales of footwear, apparel, equipment, accessories,<br> and services. </p>
+            <div class="text">
+                <button class="btn">Buy Now</button>
+                <div class="social-media">
+                    <a href="https://github.com/RokKog"><i class="fa icons fa-facebook" ></i></a>
+                    <a href="https://www.instagram.com/nike/"><i class="fa icons fa-instagram"></i></a>
+                    <a href="https://twitter.com/Nike"><i class="fa icons fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+       
+           
+        <img src="Slike/nike.png" class="image">
+        <canvas id="myCanvas" width="180" height="65" style="
+        margin-left: 39%;
+        transform: rotate(-7deg);
+        margin-top: 0%;
+        padding-bottom: 2%;
+        position: absolute;"></canvas>
+     <script>
+         var canvas = document.getElementById('myCanvas');
+         var context = canvas.getContext('2d');
+         x = 0.05;
+         y = 0.05;
+         context.beginPath();
+         context.scale(x, y);
+         context.moveTo(177, -3);
+         context.bezierCurveTo(-128, 298, -2, 520, 309, 388);
+         context.bezierCurveTo(309, 388, 1197, 8, 1197, 8);
+         context.bezierCurveTo(1197, 8, 311, 244, 311, 244);
+         context.bezierCurveTo(60, 289, 128, 70, 177, -3);
+         context.lineWidth = 2;
+
+         // line color
+         context.strokeStyle = 'black';
+         context.fill();
+         context.stroke();
+       </script>
+      </div>
+</body>
+</html>
