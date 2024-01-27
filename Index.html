@@ -43,7 +43,7 @@
             <h1>Nike <span class="style">Shoes</span></h1>
             <p>Nike, Inc. is an American multinational corporation that is <br>engaged in the design, development, manufacturing, and worldwide <br>marketing and sales of footwear, apparel, equipment, accessories,<br> and services. </p>
             <div class="text">
-                <button class="btn">Buy Now</button>
+                <button class="btn" onclick="showAlert()">Buy Now</button>
                 <div class="social-media">
                     <a href="https://github.com/RokKog"><i class="fa icons fa-facebook" ></i></a>
                     <a href="https://www.instagram.com/nike/"><i class="fa icons fa-instagram"></i></a>
@@ -80,5 +80,16 @@
          context.stroke();
        </script>
       </div>
+      <script>
+        function showAlert() {
+        Swal.fire({
+         title: "Error!",
+        text: "The product is not in stock yet.",
+        imageUrl: "https://upload.wikimedia.org/wikipedia/commons/9/94/Old_Nike_logo.jpg",
+        imageWidth: 200,
+        imageHeight: 100,
+        imageAlt: "Custom image"
+        })};
+      </script>
 </body>
 </html>
